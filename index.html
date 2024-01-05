@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <div id="page1">
+        <nav>
+            <img src="VizSortX.png" height="100">
+            <div id="nav-part2">
+                <h4 id="selection-sort" onclick="selectAlgorithm('selection')"><a href="#">Selection Sort</a></h4>
+                <h4 id="merge-sort" onclick="selectAlgorithm('merge')"><a href="#">Merge Sort</a></h4>
+                <h4 id="bubble-sort" onclick="selectAlgorithm('bubble')"><a href="#">Bubble Sort</a></h4>
+            </div>
+        </nav>
+        <div id="center">
+            <div id="title-container">
+                <h1>Sorting Visualizer</h1>
+            </div>
+            <div id="visualization"></div>
+            <!-- Button for resetting bars -->
+            <button onclick="resetBars()">Reset Bars</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
